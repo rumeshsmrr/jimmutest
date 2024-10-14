@@ -1,0 +1,134 @@
+/* Footer.css */
+.footer {
+  background: white; /* Adjust colors as needed */
+  color: #000000;
+  padding: 100px 20px 60px; /* Increase top padding to account for the overlay */
+  position: relative;
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.1); /* Add shadow to the bottom */
+}
+
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between; /* Center align footer sections */
+  align-items: flex-start;
+  max-width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.footer-logo {
+  flex: 0 0 auto; /* Allow logo to fit its content */
+  margin-right: 20px; /* Space between logo and sections */
+}
+
+.logo-image {
+  width: 150px;
+}
+
+.footer-section {
+  flex: 0 0 auto; /* Allow sections to fit their content */
+  text-align: left;
+  margin: 0 15px; /* Space around sections */
+}
+
+.footer-section.last {
+  text-align: right; /* Align the last section's text to the right */
+}
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #0f1831;
+  font-weight: 700;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+}
+
+.footer-link {
+  color: #0f1831;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Align icons to the right */
+  gap: 15px; /* Space between icons */
+}
+
+.footer-icon-link {
+  color: #000000;
+  font-size: 24px;
+}
+
+.footer-icon-link:hover {
+  color: #1b329a; /* Change color on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #0f1831;
+  font-weight: 500;
+}
+
+.footer-seperator {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 98%; /* Adjust width of separator */
+  height: 1.5px;
+  background: linear-gradient(to right, #1B929A 50%, #41B390 50%);
+  margin-top: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column; /* Stack sections vertically on small screens */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center align text */
+  }
+
+  .footer-section {
+    margin: 10px 0; /* Space between stacked sections */
+  }
+
+  /* Align Solution and Company sections in the middle */
+  .footer-section:nth-child(2), /* Solution */
+  .footer-section:nth-child(3) { /* Company */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+  }
+
+  .footer-list {
+    text-align: center; /* Center align list items */
+  }
+
+  .footer-icons {
+    justify-content: center; /* Center align icons */
+  }
+
+  .footer-logo {
+    margin-bottom: 20px; /* Space below logo */
+  }
+
+  .logo-image {
+    margin: 0 auto; /* Center logo */
+  }
+}

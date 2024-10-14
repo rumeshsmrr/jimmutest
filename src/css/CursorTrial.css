@@ -1,0 +1,18 @@
+.cursor-trail {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(66, 180, 144, 0.8); /* Trail color */
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+    mix-blend-mode: difference; /* Creates an inverted effect */
+    z-index: 1000;
+    transform: scale(1.5); /* Slightly enlarge the trail */
+  }
+  
+  .cursor-trail:active {
+    transform: scale(0.8); /* Shrink when clicked */
+  }
+  

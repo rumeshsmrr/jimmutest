@@ -1,0 +1,41 @@
+{
+    "Description_1": "Welcome to our Divorce Inquiry website, your trusted resource for navigating the complexities of divorce. We provide comprehensive information, support, and guidance tailored to your unique situation",
+    "Description_2": "Empower your choices.",
+
+
+        "MainPoints": [
+            {
+                "Title": "Comprehensive Support",
+                "Description": "We offer tailored resources to help you understand the divorce process, ensuring you have the information you need to make informed decisions at every stage."
+            },
+            {
+                "Title": "Legal Guidance",
+                "Description": "Our expert team provides insights into your legal rights and options, empowering you to navigate your situation with confidence and clarity."
+            },
+            {
+                "Title": "Emotional Well-being",
+                "Description": "We understand the emotional challenges of divorce. Our supportive community and resources are here to help you find the strength and peace of mind you deserve."
+            }
+        ],
+        "Services":
+ 
+    [
+        {
+          "icon": "✏️",
+          "title": "Warranty documents",
+          "description": "An obligation in which a third party agrees to repay a debt."
+        },
+        {
+          "icon": "📷",
+          "title": "Quick credit",
+          "description": "Money and tangible provided to you by the creditor for use."
+        },
+        {
+          "icon": "📊",
+          "title": "Create deposit",
+          "description": "Return the money after a certain period of time with interest."
+        }
+      ]
+      
+}
+    

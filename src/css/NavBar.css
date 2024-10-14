@@ -1,0 +1,58 @@
+/* Basic Navbar Styles */
+.navbar {
+    position: absolute;
+    top: 3%;     /* Adjust vertical position */
+    right: 1%;   /* Adjust horizontal position */
+    display: flex;
+    padding-left: 2%;
+    padding-right: 3%;
+    border-radius:  0 0 0 20px ;
+    justify-content: flex-end;
+    z-index: 100;
+    /* background: rgb(248,248,248); */
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Spacing between the links */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    padding: 10px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: none;
+    color: rgb(248, 248, 248);
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transform transition */
+    display: inline-block; /* For sliding effect */
+    position: relative; /* For underline animation */
+  }
+  
+  /* Hover Effect with Animation */
+  .navbar-link:hover {
+    cursor: none;
+    color: #42b490; /* Change to hover color */
+    transform: scale(1.1); /* Scale up slightly on hover */
+  }
+  
+  /* Optional Underline Animation */
+  .navbar-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #42b490; /* Underline color */
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-link:hover::after {
+    width: 100%; /* Expands the underline */
+  }

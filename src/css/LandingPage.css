@@ -1,0 +1,30 @@
+/* LandingPage.css */
+.landing-page-container {
+  position: relative;
+  text-align: center;
+  margin: 2%;
+  border-radius: 20px;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  cursor: none;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 40px); /* Inverted corner */
+  border: 4px solid #ffffff; 
+}
+
+.landing-page-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  background: rgba(15, 24, 49, 0.8); /* 0.8 represents 80% opacity */
+  transition: opacity 0.3s ease-in-out;
+}
+  
+  

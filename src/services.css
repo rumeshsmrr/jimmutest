@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  
+  color: white;
+}
+.descriptionContainer{
+  background-color: #0f1831; 
+}
+.gradient-text {
+  background: linear-gradient(90deg, #42b490, #1b929a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s ease;
+}
+
+.large-title{
+  margin-bottom: 6rem;
+}
+
+/* >>>>>>>>> Services CSS + Tailwind <<<<<<<<<<< */
+
+.card {
+  border: 0px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, rgba(66, 180, 144, 0.3), rgba(27, 146, 154, 0.3));
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  transition: transform 0.3s, box-shadow 0.3s, 0.5s, color 0.5s;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  background: linear-gradient(to right, #42b490, #1b929a);
+  color: white;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card:hover .icon {
+  background: linear-gradient(to right, #42b490, #1b929a);
+  color: white;
+}
+.icon {
+  background: linear-gradient(to right, #1b929a, #42b490);
+  transition: 0.5s, color 0.5s;
+}
+.button {
+  width: 200px;
+  height: 100px;
+  border-radius: 50px;
+  transition: transform 0.3s;
+  position: relative;
+}
+.button:hover {
+  transform: translateY(-5px);
+}
+.button:hover .arrow {
+  transform: translate(10px, -10px);
+}
+.button:hover .arrow-new {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.arrow, .arrow-new {
+  transition: transform 0.3s, opacity 0.3s;
+  position: absolute;
+  transform: rotate(45deg);
+}
+.arrow-new {
+  transform: translate(-10px, 10px) rotate(45deg);
+  opacity: 0;
+}
+
+.inner-text i,
+.inner-text{
+  color: #0f1831;
+}
+
+.image-container{
+  height: 80vh;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
